@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uk Weather</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--heading-->
+    <div id="heading">
+      <h1>uk weather forecast</h1>
+    </div>
+    <!-- end of heading-->
+    <!--dropdown list of countries-->
+    <div id="countries-container">
+      <select name="" id="countries" onchange="getCities(this.value)">
+        <option value="" selected disabled>Select a Country</option>
+        <option value="england">England</option>
+        <option value="wales">Wales</option>
+        <option value="scotland">Scotland</option>
+        <option value="northernIreland">Northern ireland</option>
+      </select>
+    </div>
+    <!-- end of dropdown list of countries-->
+
+    <!--dropdown list of cities-->
+    <div id="cities-container">
+      <select name="" id="cities">
+        <option value="" selected disabled>Select a City</option>
+        <option value="" id="list-of-cities"></option>
+      </select>
+    </div>
+    <button type="submit" onclick="getCityWeather()" class="btn">
+      get weather details
+    </button>
+    <!--end of dropdown list of cities-->
+
+    <!--weather information-->
+    <div id="weather-info">
+      <h4 class="tempCondition">
+        <img
+          id="cautionImage"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Warning_icon.svg/1153px-Warning_icon.svg.png"
+          alt=""
+          width="30px"
+          height="30px"
+          style="visibility: hidden"
+        />
+        <span id="tempCondition"></span>
+      </h4>
+      <section>
+        <h4 class="windSpeedCondition">
+          <img
+            id="cautionImage"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Warning_icon.svg/1153px-Warning_icon.svg.png"
+            alt=""
+            width="30px"
+            height="30px"
+            style="visibility: hidden"
+          />
+          <span id="windSpeedCondition"></span>
+        </h4>
+      </section>
+      <h4 class="cityName"></h4>
+      <h1 class="temperatureInCelcius"></h1>
+      <img id="weatherIcons" src="" alt="" />
+      <h4 class="temperatureInFarenheit"></h4>
+      <p class="weatherCondition"></p>
+      <p class="windSpeedInMPH"></p>
+      <p class="windSpeedInKMH"></p>
+      <p class="windDirection"></p>
+      <p class="weather-icon"></p>
+      <p class="date"></p>
+    </div>
+    <!--end of weather information-->
+
+    <script src="apiweather.js"></script>
+  </body>
+</html>

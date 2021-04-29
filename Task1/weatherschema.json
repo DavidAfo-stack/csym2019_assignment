@@ -1,0 +1,72 @@
+{
+    "cities": [
+        {
+            "name": "Belfast",
+            "weather": [
+                {
+                    "id": 1,
+                    "description": "clear sky"
+                }
+            ],
+            "main": {
+                "temp": 282.55
+            },
+            "wind": {
+                "speed": 22.5,
+                "deg": 350,
+                "chillFactor": 130
+            }
+        },
+        {
+            "name": "Belfast",
+            "weather": [
+                {
+                    "id": 1,
+                    "description": "clear sky"
+                }
+            ],
+            "main": {
+                "temp": 282.55
+            },
+            "wind": {
+                "speed": 22.5,
+                "deg": 350,
+                "chillFactor": 130
+            }
+        },
+        {
+            "name": "Belfast",
+            "weather": [
+                {
+                    "id": 1,
+                    "description": "clear sky"
+                }
+            ],
+            "main": {
+                "temp": 282.55
+            },
+            "wind": {
+                "speed": 22.5,
+                "deg": 350,
+                "chillFactor": 130
+            }
+        },
+        {
+            "name": "Belfast",
+            "weather": [
+                {
+                    "id": 1,
+                    "description": "clear sky"
+                }
+            ],
+            "main": {
+                "temp": 282.55
+            },
+            "wind": {
+                "speed": 22.5,
+                "deg": 350,
+                "chillFactor": 130
+            }
+        }
+    ]
+}

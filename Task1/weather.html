@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uk Weather</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>UK weather forecast</h1>
+    </header>
+    <!--set table for display-->
+    <table id="table-display" style="border: 2px green solid">
+      <tr>
+        <th>City Id</th>
+        <th>City Name</th>
+        <th>Current Condition</th>
+        <th>Temperature</th>
+        <th>Wind Speed</th>
+        <th>Wind Direction</th>
+        <th>Wind Chill Factor</th>
+        <th>Cloud Icon</th>
+      </tr>
+      <tbody id="table-details"></tbody>
+    </table>
+
+    <div id="update-message"></div>
+    <!--end of display table-->
+    <script src="weather.js"></script>
+  </body>
+</html>

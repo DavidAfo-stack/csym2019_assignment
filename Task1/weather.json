@@ -1,9 +1,8 @@
 {
-    "cities": [
-        {
+    "cities": [{
             "id": "1",
             "name": "Belfast",
-            "currentCondition": "windy",
+            "currentCondition": "snow",
             "temperature": "7",
             "windSpeed": "22.59",
             "windDirection": "210",
@@ -12,7 +11,7 @@
         {
             "id": "2",
             "name": "Belfast",
-            "currentCondition": "cold",
+            "currentCondition": "cloud",
             "temperature": "7",
             "windSpeed": "22.59",
             "windDirection": "210",
@@ -21,7 +20,7 @@
         {
             "id": "3",
             "name": "Belfast",
-            "currentCondition": "",
+            "currentCondition": "sleet",
             "temperature": "7",
             "windSpeed": "22.59",
             "windDirection": "210",
@@ -30,7 +29,7 @@
         {
             "id": "4",
             "name": "Belfast",
-            "currentCondition": "",
+            "currentCondition": "sun",
             "temperature": "7",
             "windSpeed": "22.59",
             "windDirection": "210",

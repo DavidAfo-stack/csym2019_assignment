@@ -1,12 +1,210 @@
-*:root {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  text-transform: capitalize;
-  --primaryColor: #fff;
+body {
+    background: url("../img/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    --white: #ffffff;
+    --red: rgb(190, 29, 29);
+    --blue: #272759;
+    --dark: #333;
+    --gray: lightgray;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
 }
 
-body {
-  color: var(--primaryColor);
-  background-image: url('../img/background.png');
+.nav-bar {
+    overflow: hidden;
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+.nav-bar header a {
+    color: var(--white);
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.nav-bar header a:hover {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#countries-container select {
+    left: 39.24%;
+    right: 50.69;
+    top: 20%;
+    bottom: 78.56%;
+    background: #000000;
+    border-radius: 15px;
+    height: 50px;
+}
+
+#cities-container {
+    color: var(--white);
+}
+
+#cities-container select {
+    left: 51%;
+    right: 39.17%;
+    top: 20%;
+    bottom: 78.56%;
+    background: #000000;
+    border-radius: 15px;
+    height: 50px;
+}
+
+#countries-container select,
+#cities-container select,
+option {
+    position: absolute;
+    color: var(--white);
+    width: 150px;
+}
+
+button {
+    position: absolute;
+    left: 39.24%;
+    right: 39.17%;
+    top: 30%;
+    bottom: 70.44%;
+    background: #c5940e;
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    width: 21rem;
+    text-align: center;
+    border: none;
+}
+
+#weather-info :nth-child(2) {
+    position: absolute;
+    color: var(--white);
+    align-items: center;
+    font-weight: 600;
+    font-size: 76px;
+    width: 299px;
+    height: 115px;
+    left: 630px;
+    display: flex;
+    top: 265px;
+    padding-left: 150px;
+    line-height: 172px;
+    letter-spacing: -0.045em;
+}
+
+#weather-info :nth-child(3) {
+    position: absolute;
+    color: var(--white);
+    align-items: center;
+    font-size: 130px;
+    width: 91px;
+    height: 172px;
+    left: 530px;
+    display: flex;
+    top: 270px;
+    line-height: 172px;
+    letter-spacing: -0.045em;
+}
+
+#weather-info :nth-child(4) {
+    margin-top: 220px;
+    margin-left: 450px;
+}
+
+#weather-info :last-child {
+    position: absolute;
+    font-family: 'Noto Sans JP', sans-serif;
+    width: 200px;
+    height: 29px;
+    left: 850px;
+    top: 445px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--white);
+    align-items: center;
+    display: flex;
+    letter-spacing: -0.045em;
+}
+
+#other-details {
+    visibility: hidden;
+    color: var(--white);
+    margin-top: 120px;
+    margin-left: 540px;
+    width: 32%;
+    height: 120px;
+    border-style: hidden;
+    border-radius: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6));
+}
+
+#other-details :nth-child(1) {
+    position: absolute;
+    width: 60px;
+    height: 29px;
+    left: 580px;
+    top: 530px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02rem;
+}
+
+#other-details :nth-child(2) {
+    position: absolute;
+    width: 89px;
+    height: 29px;
+    left: 700px;
+    top: 600px;
+    align-items: center;
+    letter-spacing: -0.02rem;
+}
+
+#other-details :nth-child(3) {
+    position: absolute;
+    width: 89px;
+    height: 29px;
+    left: 900px;
+    top: 555px;
+    align-items: center;
+    letter-spacing: -0.02rem;
+}
+
+#other-details :nth-child(4) {
+    position: absolute;
+    width: 89px;
+    height: 29px;
+    left: 700px;
+    top: 555px;
+    align-items: center;
+    letter-spacing: -0.02rem;
+}
+
+#other-details :nth-child(5) {
+    position: absolute;
+    display: flex;
+    height: 29px;
+    left: 900px;
+    top: 600px;
+    align-items: center;
+    letter-spacing: -0.02rem;
+}
+
+#other-details :last-child {
+    text-transform: none;
+    position: absolute;
+    display: flex;
+    height: 29px;
+    left: 580px;
+    top: 595px;
+    align-items: center;
+    letter-spacing: -0.02rem;
+}
+
+#weather-info>h4>span {
+    margin-top: 71px;
+    margin-left: -250px;
 }

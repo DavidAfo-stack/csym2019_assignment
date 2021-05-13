@@ -66,7 +66,7 @@ var icons = document.getElementById('weatherIcons');
 var pres = document.getElementById('pressure');
 
 const milesToKmConverter = (val) => {
-    return (val * 1.60934).toFixed(2) + 'kmh';
+    return (val * 1.60934).toFixed(2) + 'km/h';
 };
 
 const farenheitToCelcius = (val) => {

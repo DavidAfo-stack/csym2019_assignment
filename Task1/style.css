@@ -1,5 +1,6 @@
 body {
-    background: gray;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/forest.jpg") center/cover;
+    background-attachment: fixed;
     margin: 0;
     --white: #ffffff;
     --red: rgb(190, 29, 29);
@@ -11,7 +12,11 @@ body {
 }
 
 .nav-bar {
+    top: -10px;
+    width: 100%;
+    margin-top: 0px;
     overflow: hidden;
+    position: fixed;
     background-color: var(--dark);
     color: var(--white);
 }
@@ -29,7 +34,7 @@ body {
 }
 
 #table-display {
-    margin-top: 3rem;
+    margin-top: 9rem;
     margin-left: 20%;
     border-collapse: collapse;
     min-width: 400px;
@@ -76,5 +81,12 @@ body {
 #update-status-message {
     margin-top: 4rem;
     margin-left: 30%;
+    color: var(--red);
+}
+
+#update-status-message {
+    margin-left: 35%;
+    font-size: 40px;
+    font-weight: 900;
     color: var(--red);
 }

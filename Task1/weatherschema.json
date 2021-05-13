@@ -1,72 +1,727 @@
 {
-    "cities": [
-        {
-            "name": "Belfast",
-            "weather": [
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "cities": {
+            "type": "array",
+            "items": [{
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer",
+                            "minimum": 0
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "currentCondition": {
+                            "type": "string",
+                            "enum": [
+                                "Cloud",
+                                "Rain",
+                                "Heavy rain",
+                                "Mist",
+                                "Thunderstorm",
+                                "Snow",
+                                "Sun and cloud",
+                                "Sun",
+                                "Hail",
+                                "Heavy cloud",
+                                "Sleet"
+                            ]
+                        },
+                        "temperature": {
+                            "type": "integer"
+                        },
+                        "windSpeed": {
+                            "type": "number"
+                        },
+                        "windDirection": {
+                            "type": "integer"
+                        },
+                        "windChillFactor": {
+                            "type": "number"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "name",
+                        "currentCondition",
+                        "temperature",
+                        "windSpeed",
+                        "windDirection",
+                        "windChillFactor"
+                    ]
+                },
                 {
-                    "id": 1,
-                    "description": "clear sky"
-                }
-            ],
-            "main": {
-                "temp": 282.55
-            },
-            "wind": {
-                "speed": 22.5,
-                "deg": 350,
-                "chillFactor": 130
-            }
-        },
-        {
-            "name": "Belfast",
-            "weather": [
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "currentCondition": {
+                            "type": "string"
+                        },
+                        "temperature": {
+                            "type": "integer"
+                        },
+                        "windSpeed": {
+                            "type": "number"
+                        },
+                        "windDirection": {
+                            "type": "integer"
+                        },
+                        "windChillFactor": {
+                            "type": "number"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "name",
+                        "currentCondition",
+                        "temperature",
+                        "windSpeed",
+                        "windDirection",
+                        "windChillFactor"
+                    ]
+                },
                 {
-                    "id": 1,
-                    "description": "clear sky"
-                }
-            ],
-            "main": {
-                "temp": 282.55
-            },
-            "wind": {
-                "speed": 22.5,
-                "deg": 350,
-                "chillFactor": 130
-            }
-        },
-        {
-            "name": "Belfast",
-            "weather": [
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "currentCondition": {
+                            "type": "string"
+                        },
+                        "temperature": {
+                            "type": "integer"
+                        },
+                        "windSpeed": {
+                            "type": "number"
+                        },
+                        "windDirection": {
+                            "type": "integer"
+                        },
+                        "windChillFactor": {
+                            "type": "number"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "name",
+                        "currentCondition",
+                        "temperature",
+                        "windSpeed",
+                        "windDirection",
+                        "windChillFactor"
+                    ]
+                },
                 {
-                    "id": 1,
-                    "description": "clear sky"
-                }
-            ],
-            "main": {
-                "temp": 282.55
-            },
-            "wind": {
-                "speed": 22.5,
-                "deg": 350,
-                "chillFactor": 130
-            }
-        },
-        {
-            "name": "Belfast",
-            "weather": [
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "currentCondition": {
+                            "type": "string"
+                        },
+                        "temperature": {
+                            "type": "integer"
+                        },
+                        "windSpeed": {
+                            "type": "number"
+                        },
+                        "windDirection": {
+                            "type": "integer"
+                        },
+                        "windChillFactor": {
+                            "type": "number"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "name",
+                        "currentCondition",
+                        "temperature",
+                        "windSpeed",
+                        "windDirection",
+                        "windChillFactor"
+                    ]
+                },
                 {
-                    "id": 1,
-                    "description": "clear sky"
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "currentCondition": {
+                            "type": "string"
+                        },
+                        "temperature": {
+                            "type": "integer"
+                        },
+                        "windSpeed": {
+                            "type": "number"
+                        },
+                        "windDirection": {
+                            "type": "integer"
+                        },
+                        "windChillFactor": {
+                            "type": "number"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "name",
+                        "currentCondition",
+                        "temperature",
+                        "windSpeed",
+                        "windDirection",
+                        "windChillFactor"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "currentCondition": {
+                            "type": "string"
+                        },
+                        "temperature": {
+                            "type": "integer"
+                        },
+                        "windSpeed": {
+                            "type": "number"
+                        },
+                        "windDirection": {
+                            "type": "integer"
+                        },
+                        "windChillFactor": {
+                            "type": "number"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "name",
+                        "currentCondition",
+                        "temperature",
+                        "windSpeed",
+                        "windDirection",
+                        "windChillFactor"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "currentCondition": {
+                            "type": "string"
+                        },
+                        "temperature": {
+                            "type": "integer"
+                        },
+                        "windSpeed": {
+                            "type": "number"
+                        },
+                        "windDirection": {
+                            "type": "integer"
+                        },
+                        "windChillFactor": {
+                            "type": "number"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "name",
+                        "currentCondition",
+                        "temperature",
+                        "windSpeed",
+                        "windDirection",
+                        "windChillFactor"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "currentCondition": {
+                            "type": "string"
+                        },
+                        "temperature": {
+                            "type": "integer"
+                        },
+                        "windSpeed": {
+                            "type": "number"
+                        },
+                        "windDirection": {
+                            "type": "integer"
+                        },
+                        "windChillFactor": {
+                            "type": "number"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "name",
+                        "currentCondition",
+                        "temperature",
+                        "windSpeed",
+                        "windDirection",
+                        "windChillFactor"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "currentCondition": {
+                            "type": "string"
+                        },
+                        "temperature": {
+                            "type": "integer"
+                        },
+                        "windSpeed": {
+                            "type": "number"
+                        },
+                        "windDirection": {
+                            "type": "integer"
+                        },
+                        "windChillFactor": {
+                            "type": "number"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "name",
+                        "currentCondition",
+                        "temperature",
+                        "windSpeed",
+                        "windDirection",
+                        "windChillFactor"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "currentCondition": {
+                            "type": "string"
+                        },
+                        "temperature": {
+                            "type": "integer"
+                        },
+                        "windSpeed": {
+                            "type": "number"
+                        },
+                        "windDirection": {
+                            "type": "integer"
+                        },
+                        "windChillFactor": {
+                            "type": "number"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "name",
+                        "currentCondition",
+                        "temperature",
+                        "windSpeed",
+                        "windDirection",
+                        "windChillFactor"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "currentCondition": {
+                            "type": "string"
+                        },
+                        "temperature": {
+                            "type": "integer"
+                        },
+                        "windSpeed": {
+                            "type": "number"
+                        },
+                        "windDirection": {
+                            "type": "integer"
+                        },
+                        "windChillFactor": {
+                            "type": "number"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "name",
+                        "currentCondition",
+                        "temperature",
+                        "windSpeed",
+                        "windDirection",
+                        "windChillFactor"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "currentCondition": {
+                            "type": "string"
+                        },
+                        "temperature": {
+                            "type": "integer"
+                        },
+                        "windSpeed": {
+                            "type": "number"
+                        },
+                        "windDirection": {
+                            "type": "integer"
+                        },
+                        "windChillFactor": {
+                            "type": "number"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "name",
+                        "currentCondition",
+                        "temperature",
+                        "windSpeed",
+                        "windDirection",
+                        "windChillFactor"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "currentCondition": {
+                            "type": "string"
+                        },
+                        "temperature": {
+                            "type": "integer"
+                        },
+                        "windSpeed": {
+                            "type": "number"
+                        },
+                        "windDirection": {
+                            "type": "integer"
+                        },
+                        "windChillFactor": {
+                            "type": "number"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "name",
+                        "currentCondition",
+                        "temperature",
+                        "windSpeed",
+                        "windDirection",
+                        "windChillFactor"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "currentCondition": {
+                            "type": "string"
+                        },
+                        "temperature": {
+                            "type": "integer"
+                        },
+                        "windSpeed": {
+                            "type": "number"
+                        },
+                        "windDirection": {
+                            "type": "integer"
+                        },
+                        "windChillFactor": {
+                            "type": "number"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "name",
+                        "currentCondition",
+                        "temperature",
+                        "windSpeed",
+                        "windDirection",
+                        "windChillFactor"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "currentCondition": {
+                            "type": "string"
+                        },
+                        "temperature": {
+                            "type": "integer"
+                        },
+                        "windSpeed": {
+                            "type": "number"
+                        },
+                        "windDirection": {
+                            "type": "integer"
+                        },
+                        "windChillFactor": {
+                            "type": "number"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "name",
+                        "currentCondition",
+                        "temperature",
+                        "windSpeed",
+                        "windDirection",
+                        "windChillFactor"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "currentCondition": {
+                            "type": "string"
+                        },
+                        "temperature": {
+                            "type": "integer"
+                        },
+                        "windSpeed": {
+                            "type": "number"
+                        },
+                        "windDirection": {
+                            "type": "integer"
+                        },
+                        "windChillFactor": {
+                            "type": "number"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "name",
+                        "currentCondition",
+                        "temperature",
+                        "windSpeed",
+                        "windDirection",
+                        "windChillFactor"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "currentCondition": {
+                            "type": "string"
+                        },
+                        "temperature": {
+                            "type": "integer"
+                        },
+                        "windSpeed": {
+                            "type": "number"
+                        },
+                        "windDirection": {
+                            "type": "integer"
+                        },
+                        "windChillFactor": {
+                            "type": "number"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "name",
+                        "currentCondition",
+                        "temperature",
+                        "windSpeed",
+                        "windDirection",
+                        "windChillFactor"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "currentCondition": {
+                            "type": "string"
+                        },
+                        "temperature": {
+                            "type": "integer"
+                        },
+                        "windSpeed": {
+                            "type": "number"
+                        },
+                        "windDirection": {
+                            "type": "integer"
+                        },
+                        "windChillFactor": {
+                            "type": "number"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "name",
+                        "currentCondition",
+                        "temperature",
+                        "windSpeed",
+                        "windDirection",
+                        "windChillFactor"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "currentCondition": {
+                            "type": "string"
+                        },
+                        "temperature": {
+                            "type": "integer"
+                        },
+                        "windSpeed": {
+                            "type": "number"
+                        },
+                        "windDirection": {
+                            "type": "integer"
+                        },
+                        "windChillFactor": {
+                            "type": "number"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "name",
+                        "currentCondition",
+                        "temperature",
+                        "windSpeed",
+                        "windDirection",
+                        "windChillFactor"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "currentCondition": {
+                            "type": "string"
+                        },
+                        "temperature": {
+                            "type": "integer"
+                        },
+                        "windSpeed": {
+                            "type": "number"
+                        },
+                        "windDirection": {
+                            "type": "integer"
+                        },
+                        "windChillFactor": {
+                            "type": "number"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "name",
+                        "currentCondition",
+                        "temperature",
+                        "windSpeed",
+                        "windDirection",
+                        "windChillFactor"
+                    ]
                 }
-            ],
-            "main": {
-                "temp": 282.55
-            },
-            "wind": {
-                "speed": 22.5,
-                "deg": 350,
-                "chillFactor": 130
-            }
+            ]
         }
+    },
+    "required": [
+        "cities"
     ]
 }

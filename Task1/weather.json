@@ -1,39 +1,183 @@
 {
     "cities": [{
-            "id": "1",
-            "name": "Belfast",
-            "currentCondition": "snow",
-            "temperature": "7",
-            "windSpeed": "22.59",
-            "windDirection": "210",
-            "windChillFactor": "20"
+            "id": 1,
+            "name": "Bath",
+            "currentCondition": "Cloud",
+            "temperature": 7,
+            "windSpeed": 4.60,
+            "windDirection": 90,
+            "windChillFactor": 3.78
         },
         {
-            "id": "2",
-            "name": "Belfast",
-            "currentCondition": "cloud",
-            "temperature": "7",
-            "windSpeed": "22.59",
-            "windDirection": "210",
-            "windChillFactor": "20"
+            "id": 2,
+            "name": "Bristol",
+            "currentCondition": "Sun",
+            "temperature": 15,
+            "windSpeed": 4.20,
+            "windDirection": 180,
+            "windChillFactor": 12.06
         },
         {
-            "id": "3",
-            "name": "Belfast",
-            "currentCondition": "sleet",
-            "temperature": "7",
-            "windSpeed": "22.59",
-            "windDirection": "210",
-            "windChillFactor": "20"
+            "id": 3,
+            "name": "Birmingham",
+            "currentCondition": "Sleet",
+            "temperature": 8,
+            "windSpeed": 3.25,
+            "windDirection": 210,
+            "windChillFactor": 5.73
         },
         {
-            "id": "4",
+            "id": 4,
+            "name": "Bradford",
+            "currentCondition": "Sun and cloud",
+            "temperature": 10,
+            "windSpeed": 2.98,
+            "windDirection": 195,
+            "windChillFactor": 7.91
+        },
+        {
+            "id": 5,
+            "name": "Bournemouth",
+            "currentCondition": "Heavy rain",
+            "temperature": 5,
+            "windSpeed": 5.23,
+            "windDirection": 270,
+            "windChillFactor": 1.34
+        },
+        {
+            "id": 6,
+            "name": "Cambridge",
+            "currentCondition": "Rain",
+            "temperature": 6,
+            "windSpeed": 4.68,
+            "windDirection": 220,
+            "windChillFactor": 2.72
+        },
+        {
+            "id": 7,
+            "name": "Canterbury",
+            "currentCondition": "Thunderstorm",
+            "temperature": 5,
+            "windSpeed": 4.56,
+            "windDirection": 310,
+            "windChillFactor": 1.81
+        },
+        {
+            "id": 8,
+            "name": "Chester",
+            "currentCondition": "Snow",
+            "temperature": 1,
+            "windSpeed": 0.89,
+            "windDirection": 305,
+            "windChillFactor": 0.38
+        },
+        {
+            "id": 9,
+            "name": "Derby",
+            "currentCondition": "Heavy cloud",
+            "temperature": 11,
+            "windSpeed": 3.47,
+            "windDirection": 185,
+            "windChillFactor": 8.57
+        },
+        {
+            "id": 10,
+            "name": "Exeter",
+            "currentCondition": "Mist",
+            "temperature": 13,
+            "windSpeed": 3.34,
+            "windDirection": 230,
+            "windChillFactor": 10.66
+        },
+        {
+            "id": 11,
+            "name": "Armagh",
+            "currentCondition": "Hail",
+            "temperature": 10,
+            "windSpeed": 4.00,
+            "windDirection": 95,
+            "windChillFactor": 7.2
+        },
+        {
+            "id": 12,
             "name": "Belfast",
-            "currentCondition": "sun",
-            "temperature": "7",
-            "windSpeed": "22.59",
-            "windDirection": "210",
-            "windChillFactor": "20"
+            "currentCondition": "Sun",
+            "temperature": 20,
+            "windSpeed": 2.29,
+            "windDirection": 200,
+            "windChillFactor": 18.34
+        },
+        {
+            "id": 13,
+            "name": "Londonderry",
+            "currentCondition": "Sun and cloud",
+            "temperature": 14,
+            "windSpeed": 2.99,
+            "windDirection": 45,
+            "windChillFactor": 11.91
+        },
+        {
+            "id": 14,
+            "name": "Aberdeen",
+            "currentCondition": "Rain",
+            "temperature": 8,
+            "windSpeed": 4.12,
+            "windDirection": 80,
+            "windChillFactor": 5.12
+        },
+        {
+            "id": 15,
+            "name": "Glasgow",
+            "currentCondition": "Thunderstorm",
+            "temperature": 4,
+            "windSpeed": 4.89,
+            "windDirection": 50,
+            "windChillFactor": 0.58
+        },
+        {
+            "id": 16,
+            "name": "Cardiff",
+            "currentCondition": "Cloud",
+            "temperature": 9,
+            "windSpeed": 2.99,
+            "windDirection": 85,
+            "windChillFactor": 6.91
+        },
+        {
+            "id": 17,
+            "name": "Swansea",
+            "currentCondition": "Sun",
+            "temperature": 22,
+            "windSpeed": 1.99,
+            "windDirection": 315,
+            "windChillFactor": 20.61
+        },
+        {
+            "id": 18,
+            "name": "Newport",
+            "currentCondition": "Sun and cloud",
+            "temperature": 12,
+            "windSpeed": 2.64,
+            "windDirection": 240,
+            "windChillFactor": 10.15
+        },
+        {
+            "id": 19,
+            "name": "Bangor",
+            "currentCondition": "Rain",
+            "temperature": 10,
+            "windSpeed": 3.59,
+            "windDirection": 290,
+            "windChillFactor": 7.49
+        },
+        {
+            "id": 20,
+            "name": "Dundee",
+            "currentCondition": "Mist",
+            "temperature": 8,
+            "windSpeed": 2.50,
+            "windDirection": 110,
+            "windChillFactor": 6.25
         }
     ]
 }

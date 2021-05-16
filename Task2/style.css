@@ -1,3 +1,5 @@
+/*This is used to style the body of the webpage including background pictures, colours, font styles and margins*/
+
 body {
     background: url("../img/background.png");
     background-size: cover;
@@ -12,23 +14,35 @@ body {
     text-transform: capitalize;
 }
 
+
+/*This is used to style the navbar of the webpage*/
+
 .nav-bar {
     overflow: hidden;
     background-color: var(--dark);
     color: var(--white);
 }
 
-.nav-bar header a {
+
+/*This is used to style the link text of the navbar of the webpage*/
+
+.nav-bar h1 a {
     color: var(--white);
     text-decoration: none;
     text-align: center;
     font-size: 1.2rem;
 }
 
-.nav-bar header a:hover {
+
+/*This is used to style the hover effect of the navbar text of the webpage*/
+
+.nav-bar h1 a:hover {
     font-style: italic;
     text-decoration: underline;
 }
+
+
+/*This is used to style the select tag of the countries*/
 
 #countries-container select {
     left: 39.24%;
@@ -40,9 +54,8 @@ body {
     height: 50px;
 }
 
-#cities-container {
-    color: var(--white);
-}
+
+/*This is used to style the select tag of the cities*/
 
 #cities-container select {
     left: 51%;
@@ -54,6 +67,9 @@ body {
     height: 50px;
 }
 
+
+/*This is used to set the width and position of the options in both the cities and countries dropdown list*/
+
 #countries-container select,
 #cities-container select,
 option {
@@ -61,6 +77,9 @@ option {
     color: var(--white);
     width: 150px;
 }
+
+
+/*This is used to style the button*/
 
 button {
     position: absolute;
@@ -78,6 +97,9 @@ button {
     border: none;
 }
 
+
+/*This is used to style the second child(city name element) of the weather-info div*/
+
 #weather-info :nth-child(2) {
     position: absolute;
     color: var(--white);
@@ -86,13 +108,16 @@ button {
     font-size: 76px;
     width: 299px;
     height: 115px;
-    left: 630px;
+    left: 670px;
     display: flex;
     top: 265px;
     padding-left: 150px;
     line-height: 172px;
     letter-spacing: -0.045em;
 }
+
+
+/*This is used to style the third child (temperature in Celsius) of the weather-info div*/
 
 #weather-info :nth-child(3) {
     position: absolute;
@@ -108,10 +133,16 @@ button {
     letter-spacing: -0.045em;
 }
 
+
+/*This is used to style the fourth child (weather icons) of the weather-info div by setting margin positions*/
+
 #weather-info :nth-child(4) {
     margin-top: 220px;
     margin-left: 450px;
 }
+
+
+/*This is used to style the last child (date) of the weather-info div*/
 
 #weather-info :last-child {
     position: absolute;
@@ -129,6 +160,9 @@ button {
     letter-spacing: -0.045em;
 }
 
+
+/*This is used to style the other-details div which contains other weather parameters*/
+
 #other-details {
     visibility: hidden;
     color: var(--white);
@@ -140,6 +174,9 @@ button {
     border-radius: 20px;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6));
 }
+
+
+/*This is used to style the first child (temperature in Fahrenheit) of the other-details div*/
 
 #other-details :nth-child(1) {
     position: absolute;
@@ -153,6 +190,9 @@ button {
     letter-spacing: -0.02rem;
 }
 
+
+/*This is used to style the second child (weather condition) of the other-details div*/
+
 #other-details :nth-child(2) {
     position: absolute;
     width: 89px;
@@ -162,6 +202,9 @@ button {
     align-items: center;
     letter-spacing: -0.02rem;
 }
+
+
+/*This is used to style the third child (wind speed in mils/hour) of the other-details div*/
 
 #other-details :nth-child(3) {
     position: absolute;
@@ -173,6 +216,9 @@ button {
     letter-spacing: -0.02rem;
 }
 
+
+/*This is used to style the fourth child (wind speed in km/hour) of the other-details div*/
+
 #other-details :nth-child(4) {
     position: absolute;
     width: 89px;
@@ -182,6 +228,9 @@ button {
     align-items: center;
     letter-spacing: -0.02rem;
 }
+
+
+/*This is used to style the fifith child (wind direction) of the other-details div*/
 
 #other-details :nth-child(5) {
     position: absolute;
@@ -193,6 +242,9 @@ button {
     letter-spacing: -0.02rem;
 }
 
+
+/*This is used to style the last child (pressure) of the other-details div*/
+
 #other-details :last-child {
     text-transform: none;
     position: absolute;
@@ -203,6 +255,9 @@ button {
     align-items: center;
     letter-spacing: -0.02rem;
 }
+
+
+/*The span tag for the severe weather message is styled here*/
 
 #weather-info>h4>span {
     margin-top: 71px;

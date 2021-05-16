@@ -1,3 +1,5 @@
+/*Style for the body of html*/
+
 body {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/forest.jpg") center/cover;
     background-attachment: fixed;
@@ -11,6 +13,9 @@ body {
     text-transform: capitalize;
 }
 
+
+/*style for the nav bar*/
+
 .nav-bar {
     top: -10px;
     width: 100%;
@@ -21,17 +26,26 @@ body {
     color: var(--white);
 }
 
-.nav-bar header a {
+
+/*style for the text content in the navbar*/
+
+.nav-bar h1 a {
     color: var(--white);
     text-decoration: none;
     text-align: center;
     font-size: 1.2rem;
 }
 
-.nav-bar header a:hover {
+
+/*style for the hover effect on the text in the navbar*/
+
+.nav-bar h1 a:hover {
     font-style: italic;
     text-decoration: underline;
 }
+
+
+/*style for the table in the html page*/
 
 #table-display {
     margin-top: 9rem;
@@ -44,6 +58,9 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
+
+/*style for the table header row*/
+
 #table-display th {
     background-color: var(--blue);
     color: var(--white);
@@ -52,41 +69,57 @@ body {
     font-weight: bold;
 }
 
+
+/*set padding for the table row and table data*/
+
 #table-display th,
 #table-display td {
     padding: 12px 15px;
 }
 
+
+/*style for the border bottom of the table*/
+
 #table-display tr {
     border-bottom: 1px solid var(--white);
 }
+
+
+/*style to target all even rows in the table and set background color*/
 
 #table-display tr:nth-of-type(even) {
     background-color: var(--gray);
 }
 
+
+/*style to target all odd rows in the table and set background color*/
+
 #table-display tr:nth-of-type(odd) {
     background-color: var(--white);
 }
 
+
+/*style to target the last row in the table and set border bottom*/
+
 #table-display tr:last-of-type {
     border-bottom: 2px solid var(--blue);
 }
+
+
+/*style to indicate the rows that are active in the table*/
 
 #table-display tr.active-row {
     font-weight: bold;
     color: var(--blue);
 }
 
+
+/*style for the update message incase there is an error in loading table data*/
+
 #update-status-message {
     margin-top: 4rem;
     margin-left: 30%;
     color: var(--red);
-}
-
-#update-status-message {
-    margin-left: 35%;
-    font-size: 40px;
     font-weight: 900;
-    color: var(--red);
+    font-size: 40px;
 }

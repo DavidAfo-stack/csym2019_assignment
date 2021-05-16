@@ -4,10 +4,10 @@ window.onload() function is used here to load contents of the data to the webpag
 */
 window.onload = function() {
     const cityWeatherFile = './weather.json'; // declare a constant variable to hold the json file
-    /*The fecth method is used here to access the resources in the json file.
+    /*The fetch method is used here to access the resources in the json file.
     The fetch method handles request and response to the web browser.
     First it makes a request to the server, then it returns a promise that resolves into a response object. 
-    The then function handles the data while the catch functions handles any error 
+    The then function handles the data while the catch function handles any error 
     */
 
     //the fetch method takes in a compulsory argument which is the weather.json file in this case
@@ -87,7 +87,7 @@ window.onload = function() {
     /*This function handles how the weather data is displayed on the webpage
     The getWeatherInfo() method takes in an argument called data 
     The data is accessed depending on the attribute of the data needed to be displayed
-    Table formart is used to display the data
+    Table format is used to display the data
     */
     const getWeatherInfo = (data) => {
         let table = document.getElementById('table-display'); // declare a variable that stores the html content to be displayed
@@ -143,7 +143,7 @@ window.onload = function() {
                 data.cities[i].windChillFactor + "°" +
                 '</td>';
 
-            table.appendChild(row); // The data in the row element containig the cities weather details are added to the html table using the append method
+            table.appendChild(row); // The data in the row element containing the cities weather details are added to the html table using the append method
         }
 
     };

@@ -12,18 +12,18 @@
 <body>
     <!--heading-->
     <div class="nav-bar">
-        <header>
+        <h1>
             <a href="apiweather.html">
                 <h1>UK weather forecast</h1>
             </a>
-        </header>
+        </h1>
     </div>
     <!-- end of heading-->
 
     <!--dropdown list of countries-->
     <div id="countries-container">
-        <select name="" id="countries" onchange="getCities(this.value)">
-        <option value="" selected disabled>Select a Country</option>
+        <select name="countries" id="countries" onchange="getCities(this.value)">
+        <option selected disabled>Select a Country</option>
         <option value="england">England</option>
         <option value="wales">Wales</option>
         <option value="scotland">Scotland</option>
@@ -34,8 +34,8 @@
 
     <!--dropdown list of cities-->
     <div id="cities-container">
-        <select name="" id="cities">
-        <option value="" selected disabled>Select a City</option>
+        <select name="cities" id="cities">
+        <option selected disabled>Select a City</option>
         <option value="" id="list-of-cities"></option>
       </select>
     </div>
@@ -49,16 +49,12 @@
 
     <div id="weather-info">
         <h4>
-            <!--<img id="cautionImage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Warning_icon.svg/1153px-Warning_icon.svg.png" alt="Caution-Image" width="30px" height="30px" style="visibility: hidden" />-->
-            <!--<span id="severe-weather-condition"></span>-->
             <span id="severe-weather-condition" style="color:rgb(131, 9, 9)"></span>
         </h4>
 
         <h4 class="cityName"></h4>
         <h1 class="temperatureInCelcius" id="temp-in-celcius"></h1>
         <img id="weatherIcons" src="" alt="" />
-
-        <!--<p class="weather-icon"></p>-->
         <p class="date"></p>
     </div>
 
@@ -69,7 +65,6 @@
         <p class="windSpeedInKMH"></p>
         <p class="windDirection"></p>
         <p id="pressure"></p>
-
     </div>
     <!--end of weather information-->
 

@@ -1,4 +1,4 @@
-//load the data containing cities into an object list using json format
+//declare variable that contains list of country objects and their corresponding cities 
 var citiesCategory = {
     england: [
         'Bath',
@@ -37,7 +37,7 @@ var citiesCategory = {
     wales: ['Bangor', 'Cardiff', 'Newport', 'Swansea'],
 };
 
-//dynamicall load data into the city dropdown list when a country is selected
+//dynamically load data into the city dropdown list when a country is selected
 const getCities = (value) => {
     if (value.length == 0) {
         document.getElementById('cities').innerHTML = '<option></option>';
@@ -69,17 +69,12 @@ const milesToKmConverter = (val) => {
     return (val * 1.60934).toFixed(2) + 'km/h';
 };
 
-const farenheitToCelcius = (val) => {
+const fahrenheitToCelsius = (val) => {
     return ((val - 32) * (5 / 9)).toFixed(0) + '°C';
 };
 
-const showCautionIcon = () => {
-    var img = document.getElementById('cautionImage');
-    img.style.visibility = 'visible';
-};
-
 const getWindDirection = (val) => {
-    if (val == 0) {
+    if (val == 0 || val == 360) {
         return 'N';
     } else if (val > 0 && val < 90) {
         return 'NE';
@@ -93,45 +88,37 @@ const getWindDirection = (val) => {
         return 'SW';
     } else if (val == 270) {
         return 'W';
-    } else {
+    } else if (val > 270 && val < 360) {
         return 'NW';
     }
 };
 
+//check for severe weather 
 const getGeneralCondition = (val_temp, val_wind) => {
     val_temp = Number(val_temp);
     val_wind = Number(val_wind);
     if (val_temp > 35 || val_temp < -5 || val_wind > 50) {
-        //showCautionIcon();
         return 'Severe Weather!';
     } else {
         return '';
     }
 };
 
-// const getWindSpeed = (val) => {
-//     if (val > 50) {
-//         showCautionIcon();
-//         return ' Severe Weather!';
-//     } else {
-//         return '';
-//     }
-// };
-
+//dynamically load weather information 
 const weatherData = (data) => {
-    var nameVal = data['name'];
-    var tempVal = data['main']['temp'];
-    var presVal = data['main']['pressure'];
-    var weatherConditionVal = data['weather'][0]['description'];
-    var windSpeedVal = data['wind']['speed'];
-    var windDirectionVal = data['wind']['deg'];
-    var cloudICons = data['weather'][0]['icon'];
+    var nameVal = data.name;
+    var tempVal = data.main.temp;
+    var presVal = data.main.pressure;
+    var weatherConditionVal = data.weather[0].description;
+    var windSpeedVal = data.wind.speed;
+    var windDirectionVal = data.wind.deg;
+    var cloudICons = data.weather[0].icon;
     //set inner html values
     nameOfCity.innerHTML = nameVal;
     temp1.innerHTML = tempVal.toFixed(0) + '°F';
-    temp2.innerHTML = farenheitToCelcius(tempVal);
-    //severeMsg.innerHTML = getGeneralCondition(1000, 10000);
-    severeMsg.innerHTML = getGeneralCondition(farenheitToCelcius(tempVal), windSpeedVal);
+    temp2.innerHTML = fahrenheitToCelsius(tempVal);
+    //severeMsg.innerHTML = getGeneralCondition(36, 51);
+    severeMsg.innerHTML = getGeneralCondition(fahrenheitToCelsius(tempVal), windSpeedVal);
     weatherCondition.innerHTML = weatherConditionVal;
     date.innerHTML = new Date().toDateString();
     windSpeed1.innerHTML = windSpeedVal.toFixed(2) + 'mph';
@@ -151,17 +138,22 @@ const weatherData = (data) => {
     console.log(data);
 };
 
+//get weather details from open weather map API
 const getCityWeather = () => {
     const apiUrl =
         'https://api.openweathermap.org/data/2.5/weather?q=' +
         cityInfo.value +
         '&appid=7e4547eeb4a8dbf3ed8cb577e5996225&units=imperial';
     fetch(apiUrl)
-        .then((response) => response.json())
+        .then((response) => {
+            if (response.status !== 200) {
+                console.log("Error occured: " + response.status);
+            } else {
+                return response.json();
+            }
+        })
         .then((data) => weatherData(data))
-        .catch((error) => console.log('Error loading data'));
+        .catch((error) => console.log('Error loading data' + error));
 };
 //button function
 button.addEventListener('click', getCityWeather);
-
-//farenheitToCelcius(tempVal)

@@ -140,7 +140,7 @@ window.onload = function() {
                 data.cities[i].windDirection + "°" +
                 '</td>' +
                 '<td>' +
-                data.cities[i].windChillFactor + "°" +
+                data.cities[i].windChillFactor + "°F" +
                 '</td>';
 
             table.appendChild(row); // The data in the row element containing the cities weather details are added to the html table using the append method

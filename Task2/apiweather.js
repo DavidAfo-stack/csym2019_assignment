@@ -1,4 +1,4 @@
-//declare variable that contains list of country objects and their corresponding cities 
+// create an object called citiesCategory which contains list of countries as keys and their corresponding cities as their values. 
 var citiesCategory = {
     england: [
         'Bath',
@@ -17,7 +17,7 @@ var citiesCategory = {
         'Liverpool',
         'London',
         'Manchester',
-        'Newcastle upon Tyne',
+        'Newcastle',
         'Norwich',
         'Nottingham',
         'Oxford',
@@ -43,8 +43,8 @@ const getCities = (value) => {
         document.getElementById('cities').innerHTML = '<option></option>';
     } else {
         var cityOptions = '';
-        for (cityId in citiesCategory[value]) {
-            cityOptions += '<option>' + citiesCategory[value][cityId] + '</option>';
+        for (city in citiesCategory[value]) {
+            cityOptions += '<option>' + citiesCategory[value][city] + '</option>';
         }
         document.getElementById('cities').innerHTML = cityOptions;
     }

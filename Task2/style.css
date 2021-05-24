@@ -263,3 +263,49 @@ button {
     margin-top: 71px;
     margin-left: -250px;
 }
+
+
+/*This is used to handle bigger screens
+The position of the button is handled to align properly on bigger screens 
+*/
+
+@media only screen and (max-width: 1920px) {
+    button {
+        position: absolute;
+        left: 40.54%;
+        right: 39.17%;
+        top: 30%;
+        bottom: 70.44%;
+        background: #c5940e;
+        border-radius: 15px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        font-weight: bold;
+        width: 21rem;
+        text-align: center;
+        border: none;
+    }
+}
+
+
+/*This is used to handle bigger screens
+The position of the button is handled to align properly on laptop screens 
+*/
+
+@media only screen and (max-width: 1536px) {
+    button {
+        position: absolute;
+        left: 39.24%;
+        right: 39.17%;
+        top: 30%;
+        bottom: 70.44%;
+        background: #c5940e;
+        border-radius: 15px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        font-weight: bold;
+        width: 21rem;
+        text-align: center;
+        border: none;
+    }
+}

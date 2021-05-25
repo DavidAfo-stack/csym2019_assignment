@@ -153,7 +153,13 @@ const getCityWeather = () => {
             }
         })
         .then((data) => weatherData(data))
-        .catch((error) => console.log('Error loading data' + error));
+        .catch((error) => {
+            alert('Error Loading Data!!!')
+            console.log('Error loading data! ' + error)
+        });
 };
 //button function
-button.addEventListener('click', getCityWeather);
+button.addEventListener('click', function(event) {
+    event.preventDefault()
+    getCityWeather()
+});

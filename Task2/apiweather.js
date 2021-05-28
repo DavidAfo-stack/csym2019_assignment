@@ -51,7 +51,6 @@ const getCities = (value) => {
 };
 
 //declare variables
-var button = document.querySelector('.btn');
 var cityInfo = document.querySelector('#cities');
 var nameOfCity = document.querySelector('.cityName');
 var temp1 = document.querySelector('.temperatureInFarenheit');
@@ -65,10 +64,12 @@ var date = document.querySelector('.date');
 var icons = document.getElementById('weatherIcons');
 var pres = document.getElementById('pressure');
 
+//function to convert miles per hour to km per hour
 const milesToKmConverter = (val) => {
     return (val * 1.60934).toFixed(2) + 'km/h';
 };
 
+//function to convert farenheit to celcius 
 const fahrenheitToCelsius = (val) => {
     return ((val - 32) * (5 / 9)).toFixed(0) + '°C';
 };
@@ -117,7 +118,6 @@ const weatherData = (data) => {
     nameOfCity.innerHTML = nameVal;
     temp1.innerHTML = tempVal.toFixed(0) + '°F';
     temp2.innerHTML = fahrenheitToCelsius(tempVal);
-    //severeMsg.innerHTML = getGeneralCondition(36, 51);
     severeMsg.innerHTML = getGeneralCondition(fahrenheitToCelsius(tempVal), windSpeedVal);
     weatherCondition.innerHTML = weatherConditionVal;
     date.innerHTML = new Date().toDateString();
@@ -132,6 +132,8 @@ const weatherData = (data) => {
         'src',
         `http://openweathermap.org/img/wn/${cloudICons}@2x.png`
     );
+    icons.setAttribute('alt', 'Weather Icons')
+
 
     document.getElementById('other-details').style.visibility = 'visible';
 
@@ -145,21 +147,10 @@ const getCityWeather = () => {
         cityInfo.value +
         '&appid=7e4547eeb4a8dbf3ed8cb577e5996225&units=imperial';
     fetch(apiUrl)
-        .then((response) => {
-            if (response.status !== 200) {
-                console.log("Error occured: " + response.status);
-            } else {
-                return response.json();
-            }
-        })
+        .then((response) => response.json())
         .then((data) => weatherData(data))
         .catch((error) => {
             alert('Error Loading Data!!!')
             console.log('Error loading data! ' + error)
         });
 };
-//button function
-button.addEventListener('click', function(event) {
-    event.preventDefault()
-    getCityWeather()
-});

@@ -12,14 +12,7 @@ window.onload = function() {
 
     //the fetch method takes in a compulsory argument which is the weather.json file in this case
     fetch(cityWeatherFile)
-        .then((response) => {
-            //the response is accessed here and it is important to ensure that the response status is 200 using an if statement
-            if (response.status !== 200) {
-                console.log("Error occured: " + response.status); // log error to console if response status is not 200
-            } else {
-                return response.json(); // return the json object of the output if response status is satisfied
-            }
-        })
+        .then((response) => response.json())
         .then((data) => {
             /*The text in the reponse is being examined here
             The getWeatherInfo() method is called here and takes in data as an argument 

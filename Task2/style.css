@@ -1,9 +1,8 @@
 /*This is used to style the body of the webpage including background pictures, colours, font styles and margins*/
 
 body {
-    background: url("../img/background.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6)), url("../img/background.png");
     background-size: cover;
-    background-repeat: no-repeat;
     margin: 0;
     --white: #ffffff;
     --red: rgb(190, 29, 29);
@@ -26,19 +25,11 @@ body {
 
 /*This is used to style the link text of the navbar of the webpage*/
 
-.nav-bar h1 a {
+.nav-bar h1 {
     color: var(--white);
     text-decoration: none;
     text-align: center;
-    font-size: 1.2rem;
-}
-
-
-/*This is used to style the hover effect of the navbar text of the webpage*/
-
-.nav-bar h1 a:hover {
-    font-style: italic;
-    text-decoration: underline;
+    font-size: 2rem;
 }
 
 
@@ -170,9 +161,6 @@ button {
     margin-left: 540px;
     width: 32%;
     height: 120px;
-    border-style: hidden;
-    border-radius: 20px;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6));
 }
 
 
@@ -265,7 +253,7 @@ button {
 }
 
 
-/*This is used to handle bigger screens
+/*This is used to handle screen of 27inches
 The position of the button is handled to align properly on bigger screens 
 */
 
@@ -288,7 +276,7 @@ The position of the button is handled to align properly on bigger screens
 }
 
 
-/*This is used to handle bigger screens
+/*This is used to handle screen of 14inches
 The position of the button is handled to align properly on laptop screens 
 */
 

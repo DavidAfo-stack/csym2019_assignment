@@ -27,7 +27,8 @@ window.onload = function() {
             setTimeout(function() {
                 getWeatherInfo(data); // the getWeatherInfo() method is called here again to keep displaying every 5 seconds
                 window.onload(); // window.onload() method is being called here again so that whenever the page refreshes, the content are loaded immediately
-                console.log(data); //display the data on the console
+
+                //console.log(data); //This has been commented out to optimize memory space. This displays the data on the console
             }, 5000);
         })
         .catch((error) => {

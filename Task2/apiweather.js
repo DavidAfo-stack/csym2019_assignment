@@ -137,7 +137,7 @@ const weatherData = (data) => {
 
     document.getElementById('other-details').style.visibility = 'visible';
 
-    console.log(data);
+    //console.log(data); //this has been commented out to optimize memory space. It is used to checl the data on the console. 
 };
 
 //get weather details from open weather map API
